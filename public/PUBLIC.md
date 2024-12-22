@@ -1,12 +1,10 @@
 # Publicly accessible files (for web apps)
 
-
 ## Folder Structure
 
 ```
 project/
 │
-
 ├── public/                 # Publicly accessible files (for web apps)
 │   ├── css/
 │   ├── images/
@@ -15,9 +13,11 @@ project/
 │
 ```
 
+### **Folder Structure Explanation**
+
 * * *
 
-## **`public/`**
+#### **`public/`**
 
 - **Purpose:** Contains publicly accessible assets for web apps.
     - **Examples:**

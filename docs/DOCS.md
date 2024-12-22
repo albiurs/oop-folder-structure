@@ -5,19 +5,18 @@
 ```
 project/
 │
-
-│
 ├── docs/                   # Documentation
 │   ├── API.md
 │   ├── CONTRIBUTING.md
 │   └── README.md
-│
 ```
 
 
+### **Folder Structure Explanation**
+
 * * *
 
-## **`docs/`**
+#### **`docs/`**
 
 - **Purpose:** Stores documentation files for developers and contributors.
     - **Examples:**

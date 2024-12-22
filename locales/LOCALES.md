@@ -1,5 +1,18 @@
 # Internationalization/localization
 
+## Folder Structure
+
+```
+project/
+│
+├── locales/                # Internationalization/localization
+│   ├── en.json
+│   └── fr.json
+│
+```
+
+### **Folder Structure Explanation**
+
 * * *
 
 #### **`locales/`**
@@ -11,17 +24,3 @@
         - `es.json`: Spanish translations for the application's content.
 
 * * *
-
-
-## Folder Structure
-
-```
-project/
-│
-
-│
-├── locales/                # Internationalization/localization
-│   ├── en.json
-│   └── fr.json
-│
-```

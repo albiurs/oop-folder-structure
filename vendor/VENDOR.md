@@ -8,9 +8,12 @@ project/
 └── vendor/                 # Third-party libraries (e.g., Composer, npm)
 ```
 
+
+### **Folder Structure Explanation**
+
 * * *
 
-## **`vendor/`**
+#### **`vendor/`**
 
 - **Purpose:** Stores third-party dependencies managed by Composer, npm, etc.
     - **Examples:**
