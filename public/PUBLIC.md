@@ -17,13 +17,24 @@ project/
 
 * * *
 
-#### **`public/`**
+### **`public/`**
 
-- **Purpose:** Contains publicly accessible assets for web apps.
+- **Purpose:** Contains **publicly accessible files** for web applications, such as the main entry point, static assets, and resources.
     - **Examples:**
-        - `index.php`: The main entry point for web server requests.
-        - `css/style.css`: Defines styles for the frontend UI.
-        - `images/logo.png`: A static image used on the site.
-        - `js/app.js`: Main JavaScript file for frontend behavior.
+        - `index.php`: Main entry point for handling web requests.
+        - `robots.txt`: Controls how search engines crawl the website.
+        - `.htaccess`: Server configuration file for Apache (e.g., URL rewriting).
+        - **`css/`**:
+            - `style.css`: Main stylesheet for the application.
+            - `theme.css`: Defines theme-specific styles.
+            - `responsive.css`: Handles responsive designs for different devices.
+        - **`js/`**:
+            - `app.js`: Main JavaScript file for the application.
+            - `validation.js`: Implements client-side form validation.
+            - `animations.js`: Contains JavaScript for UI animations.
+        - **`images/`**:
+            - `logo.png`: Application logo.
+            - `favicon.ico`: Small icon displayed in browser tabs.
+            - `banner.jpg`: Homepage banner image.
 
 * * *

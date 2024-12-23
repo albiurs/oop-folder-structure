@@ -20,10 +20,17 @@ project/
 
 #### **`jobs/`**
 
-- **Purpose:** Encapsulates asynchronous tasks executed in the background.
+- **Purpose:** Contains classes for **asynchronous tasks** or background jobs that can be queued and executed independently of the main application workflow. Jobs improve application performance and scalability by offloading heavy or time-consuming tasks.
     - **Examples:**
-        - `SendEmailJob.php`: Sends email notifications in the background.
-        - `GenerateReportJob.php`: Creates reports without blocking main processes.
-        - `DataCleanupJob.php`: Removes obsolete data periodically.
+        - `SendEmailJob.php`: Handles sending emails (e.g., account confirmation, notifications).
+        - `GenerateReportJob.php`: Generates large or time-consuming reports (e.g., sales reports).
+        - `DataCleanupJob.php`: Periodically cleans up outdated or unnecessary data.
+        - `SendInvoiceJob.php`: Sends invoices to customers via email or other channels.
+        - `RecalculateStatisticsJob.php`: Recomputes application-wide statistics asynchronously.
+        - `ProcessPaymentJob.php`: Processes payments in the background.
+        - `SyncExternalApiJob.php`: Synchronizes data with an external API (e.g., for inventory).
+        - `PushNotificationJob.php`: Sends push notifications to mobile or web users.
+        - `ExportUserDataJob.php`: Handles data exports for GDPR compliance.
+        - `BackupDatabaseJob.php`: Automates database backups to secure locations.
 
 * * *

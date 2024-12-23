@@ -22,11 +22,19 @@ project/
 
 #### **`application/`**
 
-- **Purpose:** Implements application-specific logic, bridging APIs with domain logic.
-    - **`use_cases/`**: Coordinates core application workflows.
+- **Purpose:** Implements the main workflows and use cases of the application. This folder bridges domain logic with external systems and user actions, encapsulating high-level business logic.
+    - **`use_cases/`**: Implements workflows that require coordination between services, queries, and commands. They represent high-level business use cases and often define specific application features.
         - Examples:
-            - `RegisterUser.php`: Handles all logic for user registration.
-            - `ProcessOrder.php`: Orchestrates the steps for placing an order.
-            - `SendInvoice.php`: Manages the workflow for generating and sending invoices.
+            - `RegisterUser.php`: Coordinates user registration, including validation, saving, and sending confirmation emails.
+            - `ProcessOrder.php`: Manages the workflow for placing an order.
+            - `SendNotification.php`: Handles the process of sending a notification.
+            - `GenerateInvoice.php`: Orchestrates the generation of an invoice.
+            - `ResetUserPassword.php`: Manages the end-to-end password reset process.
+            - `ApplyDiscountToOrder.php`: Combines discount calculations with order updates.
+            - `UpdateUserProfile.php`: Handles profile update requests.
+            - `AddProductToCatalog.php`: Adds a new product to the catalog with associated data.
+            - `FetchDashboardMetrics.php`: Prepares analytics for the admin dashboard.
+            - `CreateReport.php`: Manages the process of generating and formatting reports.
+
 
 * * *

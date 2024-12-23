@@ -20,11 +20,18 @@ project/
 
 #### **`infrastructure/`**
 
-- **Purpose:** Manages technical implementation details and external system interactions.
-    - **`middleware/`**: Processes requests and responses in a pipeline.
+- **Purpose:** Manages the **technical and integration details** of the application, including interaction with databases, external services, middleware, caching, and runtime guards.
+    - **`middleware/`**: Contains logic for processing HTTP requests and responses, such as authentication or logging.
         - Examples:
-            - `AuthenticationMiddleware.php`: Checks if the user is authenticated.
-            - `LoggingMiddleware.php`: Logs request/response data for debugging.
-            - `RateLimitingMiddleware.php`: Enforces request rate limits.
+            - `AuthenticationMiddleware.php`: Ensures that users are authenticated for protected routes.
+            - `LoggingMiddleware.php`: Logs incoming requests and responses for debugging purposes.
+            - `RateLimitingMiddleware.php`: Enforces request rate limits for APIs.
+            - `CorsMiddleware.php`: Handles Cross-Origin Resource Sharing policies.
+            - `AuthorizationMiddleware.php`: Checks user permissions for requested actions.
+            - `LocalizationMiddleware.php`: Sets the language/locale for the current request.
+            - `RequestValidationMiddleware.php`: Validates incoming request data against predefined schemas.
+            - `ErrorHandlingMiddleware.php`: Centralizes error handling and formatting for client responses.
+            - `SessionMiddleware.php`: Manages session data for authenticated users.
+            - `CacheMiddleware.php`: Implements caching for specific requests to improve performance.
 
 * * *

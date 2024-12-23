@@ -20,11 +20,18 @@ project/
 
 #### **`application/`**
 
-- **Purpose:** Implements application-specific logic, bridging APIs with domain logic.
-    - **`queries/`**: Manages data retrieval logic, typically for read-only operations.
+- **Purpose:** Implements the main workflows and use cases of the application. This folder bridges domain logic with external systems and user actions, encapsulating high-level business logic.
+    - **`queries/`**: Handles read-only operations by encapsulating data-fetching logic. Queries are responsible for retrieving specific data efficiently and clearly.
         - Examples:
-            - `GetUserByIdQuery.php`: Retrieves a user by their unique identifier.
-            - `ListOrdersQuery.php`: Fetches a paginated list of orders.
-            - `GetProductDetailsQuery.php`: Retrieves detailed information about a product.
+            - `GetUserByIdQuery.php`: Retrieves a user by their unique ID.
+            - `ListOrdersQuery.php`: Returns all orders for a specific user or timeframe.
+            - `GetProductDetailsQuery.php`: Fetches detailed product information by ID.
+            - `SearchProductsQuery.php`: Retrieves products matching search criteria.
+            - `GetCategoryByIdQuery.php`: Retrieves a category by its identifier.
+            - `GetOrderHistoryQuery.php`: Fetches a user’s past orders.
+            - `FetchNotificationsQuery.php`: Retrieves unread notifications for a user.
+            - `ListReviewsQuery.php`: Retrieves product reviews from the database.
+            - `GetReportDataQuery.php`: Retrieves data required for generating reports.
+            - `GetDiscountsQuery.php`: Fetches available discount codes or coupons.
 
 * * *

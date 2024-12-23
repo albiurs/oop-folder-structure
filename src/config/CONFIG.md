@@ -20,10 +20,19 @@ project/
 
 #### **`config/`**
 
-- **Purpose:** Stores centralized configuration files for the application.
+#### **`config/`**
+
+- **Purpose:** Stores **configuration files** for various aspects of the application, such as database connections, caching, API keys, or feature toggles.
     - **Examples:**
-        - `app.php`: Configures application-wide settings like debug mode or base URL.
-        - `database.php`: Contains database connection settings (e.g., credentials, host).
-        - `cache.php`: Configures caching mechanisms such as Redis or file-based caching.
+        - `database.php`: Contains database connection settings, credentials, and driver details.
+        - `app.php`: Configures application-level settings (e.g., environment, timezone, debug mode).
+        - `cache.php`: Defines caching strategies, backends (e.g., Redis, Memcached), and expiration times.
+        - `api.php`: Stores API-specific settings, such as rate limits or base URLs.
+        - `mail.php`: Configures mail servers and templates for outgoing emails.
+        - `logging.php`: Defines logging levels, destinations (e.g., files, cloud services), and formats.
+        - `queue.php`: Configures job queues, workers, and retry policies.
+        - `services.php`: Stores credentials and endpoints for third-party services (e.g., Stripe, AWS).
+        - `features.php`: Enables or disables application features using feature flags.
+        - `security.php`: Configures security settings (e.g., encryption keys, allowed IPs, CORS rules).
 
 * * *
