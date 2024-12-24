@@ -32,7 +32,7 @@ project/
 │   │   └── serializers/    # Serialization logic for API data
 │   │
 │   ├── shared/             # Shared resources and reusable components
-│   │   ├── dto/            # Data Transfer Objects
+│   │   └── dto/            # Data Transfer Objects
 │   │
 │   ├── utilities/          # General-purpose utilities
 │   │
