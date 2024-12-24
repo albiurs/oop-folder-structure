@@ -2,6 +2,62 @@ Here is the **Expanded Folder Structure Explanation** with **even more detailed 
 
 * * *
 
+### **`docs/`**
+
+- **Purpose:** Stores all **documentation** related to the application, including usage guides, API references, contribution guidelines, and more.
+    - **Examples:**
+        - `README.md`: General project overview and setup instructions.
+        - `CONTRIBUTING.md`: Guidelines for contributing to the project.
+        - `API.md`: Detailed API documentation, including endpoints, request formats, and response structures.
+        - `CHANGELOG.md`: Tracks changes, updates, and new features in each release.
+        - `ARCHITECTURE.md`: Describes the overall architecture and design of the application.
+        - `DEPLOYMENT.md`: Step-by-step guide for deploying the application.
+        - `TROUBLESHOOTING.md`: Common issues and their resolutions.
+        - `USER_GUIDE.md`: Detailed instructions for end-users on how to use the application.
+        - `TEST_STRATEGY.md`: Explains the testing approach and methodologies used.
+        - `SECURITY.md`: Security considerations, policies, and best practices.
+
+* * *
+
+### **`locales/`**
+
+- **Purpose:** Contains **localization files** for supporting multiple languages or regional settings in the application.
+    - **Examples:**
+        - `en.json`: Localization strings for English.
+        - `fr.json`: Localization strings for French.
+        - `es.json`: Localization strings for Spanish.
+        - `de.json`: Localization strings for German.
+        - `jp.json`: Localization strings for Japanese.
+        - `zh.json`: Localization strings for Chinese.
+        - `it.json`: Localization strings for Italian.
+        - `ru.json`: Localization strings for Russian.
+        - `ar.json`: Localization strings for Arabic.
+        - `pt.json`: Localization strings for Portuguese.
+
+* * *
+
+### **`public/`**
+
+- **Purpose:** Contains **publicly accessible files** for web applications, such as the main entry point, static assets, and resources.
+    - **Examples:**
+        - `index.php`: Main entry point for handling web requests.
+        - `robots.txt`: Controls how search engines crawl the website.
+        - `.htaccess`: Server configuration file for Apache (e.g., URL rewriting).
+        - **`css/`**:
+            - `style.css`: Main stylesheet for the application.
+            - `theme.css`: Defines theme-specific styles.
+            - `responsive.css`: Handles responsive designs for different devices.
+        - **`js/`**:
+            - `app.js`: Main JavaScript file for the application.
+            - `validation.js`: Implements client-side form validation.
+            - `animations.js`: Contains JavaScript for UI animations.
+        - **`images/`**:
+            - `logo.png`: Application logo.
+            - `favicon.ico`: Small icon displayed in browser tabs.
+            - `banner.jpg`: Homepage banner image.
+
+* * *
+
 ### **src/**
 
 * * *
@@ -111,6 +167,23 @@ Here is the **Expanded Folder Structure Explanation** with **even more detailed 
             - `AddProductToCatalog.php`: Adds a new product to the catalog with associated data.
             - `FetchDashboardMetrics.php`: Prepares analytics for the admin dashboard.
             - `CreateReport.php`: Manages the process of generating and formatting reports.
+
+* * *
+
+#### **`config/`**
+
+- **Purpose:** Stores **configuration files** for various aspects of the application, such as database connections, caching, API keys, or feature toggles.
+    - **Examples:**
+        - `database.php`: Contains database connection settings, credentials, and driver details.
+        - `app.php`: Configures application-level settings (e.g., environment, timezone, debug mode).
+        - `cache.php`: Defines caching strategies, backends (e.g., Redis, Memcached), and expiration times.
+        - `api.php`: Stores API-specific settings, such as rate limits or base URLs.
+        - `mail.php`: Configures mail servers and templates for outgoing emails.
+        - `logging.php`: Defines logging levels, destinations (e.g., files, cloud services), and formats.
+        - `queue.php`: Configures job queues, workers, and retry policies.
+        - `services.php`: Stores credentials and endpoints for third-party services (e.g., Stripe, AWS).
+        - `features.php`: Enables or disables application features using feature flags.
+        - `security.php`: Configures security settings (e.g., encryption keys, allowed IPs, CORS rules).
 
 * * *
 
@@ -268,40 +341,6 @@ Here is the **Expanded Folder Structure Explanation** with **even more detailed 
 
 * * *
 
-#### **`utilities/`**
-
-- **Purpose:** Contains **reusable helper classes and functions** for common, application-wide tasks that don't belong to specific features or layers.
-    - **Examples:**
-        - `DateFormatter.php`: Provides methods to format dates for various locales or use cases.
-        - `Validator.php`: Validates data inputs across the application.
-        - `Logger.php`: Centralized logging utility for debugging and error tracking.
-        - `FileUploader.php`: Handles file uploads and storage (e.g., for user profiles or documents).
-        - `JsonParser.php`: Processes JSON data, ensuring it adheres to expected structures.
-        - `PasswordHasher.php`: Provides secure password hashing and verification.
-        - `ApiResponseHelper.php`: Formats API responses in a consistent structure.
-        - `MathHelper.php`: Contains utility functions for mathematical operations (e.g., percentages, rounding).
-        - `CsvHandler.php`: Reads and writes CSV files for data import/export.
-        - `StringSanitizer.php`: Cleans and sanitizes user input to prevent injection attacks.
-
-* * *
-
-#### **`config/`**
-
-- **Purpose:** Stores **configuration files** for various aspects of the application, such as database connections, caching, API keys, or feature toggles.
-    - **Examples:**
-        - `database.php`: Contains database connection settings, credentials, and driver details.
-        - `app.php`: Configures application-level settings (e.g., environment, timezone, debug mode).
-        - `cache.php`: Defines caching strategies, backends (e.g., Redis, Memcached), and expiration times.
-        - `api.php`: Stores API-specific settings, such as rate limits or base URLs.
-        - `mail.php`: Configures mail servers and templates for outgoing emails.
-        - `logging.php`: Defines logging levels, destinations (e.g., files, cloud services), and formats.
-        - `queue.php`: Configures job queues, workers, and retry policies.
-        - `services.php`: Stores credentials and endpoints for third-party services (e.g., Stripe, AWS).
-        - `features.php`: Enables or disables application features using feature flags.
-        - `security.php`: Configures security settings (e.g., encryption keys, allowed IPs, CORS rules).
-
-* * *
-
 #### **`tests/`**
 
 - **Purpose:** Contains all **test cases** to ensure the application works as expected. Organized into unit tests, integration tests, end-to-end (e2e) tests, and other specialized test resources.
@@ -335,59 +374,20 @@ Here is the **Expanded Folder Structure Explanation** with **even more detailed 
 
 * * *
 
-#### **`docs/`**
+#### **`utilities/`**
 
-- **Purpose:** Stores all **documentation** related to the application, including usage guides, API references, contribution guidelines, and more.
+- **Purpose:** Contains **reusable helper classes and functions** for common, application-wide tasks that don't belong to specific features or layers.
     - **Examples:**
-        - `README.md`: General project overview and setup instructions.
-        - `CONTRIBUTING.md`: Guidelines for contributing to the project.
-        - `API.md`: Detailed API documentation, including endpoints, request formats, and response structures.
-        - `CHANGELOG.md`: Tracks changes, updates, and new features in each release.
-        - `ARCHITECTURE.md`: Describes the overall architecture and design of the application.
-        - `DEPLOYMENT.md`: Step-by-step guide for deploying the application.
-        - `TROUBLESHOOTING.md`: Common issues and their resolutions.
-        - `USER_GUIDE.md`: Detailed instructions for end-users on how to use the application.
-        - `TEST_STRATEGY.md`: Explains the testing approach and methodologies used.
-        - `SECURITY.md`: Security considerations, policies, and best practices.
-
-* * *
-
-### **`locales/`**
-
-- **Purpose:** Contains **localization files** for supporting multiple languages or regional settings in the application.
-    - **Examples:**
-        - `en.json`: Localization strings for English.
-        - `fr.json`: Localization strings for French.
-        - `es.json`: Localization strings for Spanish.
-        - `de.json`: Localization strings for German.
-        - `jp.json`: Localization strings for Japanese.
-        - `zh.json`: Localization strings for Chinese.
-        - `it.json`: Localization strings for Italian.
-        - `ru.json`: Localization strings for Russian.
-        - `ar.json`: Localization strings for Arabic.
-        - `pt.json`: Localization strings for Portuguese.
-
-* * *
-
-### **`public/`**
-
-- **Purpose:** Contains **publicly accessible files** for web applications, such as the main entry point, static assets, and resources.
-    - **Examples:**
-        - `index.php`: Main entry point for handling web requests.
-        - `robots.txt`: Controls how search engines crawl the website.
-        - `.htaccess`: Server configuration file for Apache (e.g., URL rewriting).
-        - **`css/`**:
-            - `style.css`: Main stylesheet for the application.
-            - `theme.css`: Defines theme-specific styles.
-            - `responsive.css`: Handles responsive designs for different devices.
-        - **`js/`**:
-            - `app.js`: Main JavaScript file for the application.
-            - `validation.js`: Implements client-side form validation.
-            - `animations.js`: Contains JavaScript for UI animations.
-        - **`images/`**:
-            - `logo.png`: Application logo.
-            - `favicon.ico`: Small icon displayed in browser tabs.
-            - `banner.jpg`: Homepage banner image.
+        - `DateFormatter.php`: Provides methods to format dates for various locales or use cases.
+        - `Validator.php`: Validates data inputs across the application.
+        - `Logger.php`: Centralized logging utility for debugging and error tracking.
+        - `FileUploader.php`: Handles file uploads and storage (e.g., for user profiles or documents).
+        - `JsonParser.php`: Processes JSON data, ensuring it adheres to expected structures.
+        - `PasswordHasher.php`: Provides secure password hashing and verification.
+        - `ApiResponseHelper.php`: Formats API responses in a consistent structure.
+        - `MathHelper.php`: Contains utility functions for mathematical operations (e.g., percentages, rounding).
+        - `CsvHandler.php`: Reads and writes CSV files for data import/export.
+        - `StringSanitizer.php`: Cleans and sanitizes user input to prevent injection attacks.
 
 * * *
 
