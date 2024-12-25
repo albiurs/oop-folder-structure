@@ -350,19 +350,32 @@ Here is the **Expanded Folder Structure Explanation** with **even more detailed 
 #### **`shared/`**
 
 - **Purpose:** The `shared` folder is a central location for **reusable, cross-cutting utilities, components, and resources** that are used across multiple parts of the application. This folder helps promote code reuse, maintainability, and consistency by consolidating shared functionality. Common examples include helper functions, constants, configuration files, and adapters for external integrations. Hence, the folder is for cross-cutting concerns like **shared domain logic**, **constants**, or **DTOs** that **don’t neatly fit elsewhere**. This **avoids duplication** across the project.
-    - **Structure and Examples:** The `shared` folder typically contains subfolders or modules organized by purpose (e.g., helpers, adapters, exceptions). Below is a breakdown of possible contents.
-    - 
+    - **`helpers/`**: Contains utility functions or modules that provide commonly used functionality across the application.
+        - Examples:
+            - `date_utils.py`: Functions for handling date and time formatting.
+            - `string_utils.py`: Functions for string manipulation (e.g., slug generation).
+            - `math_utils.py`: Functions for calculations and numeric processing.
+    - **`adapters/`**: Contains integrations and adapters for third-party services or libraries.
+        - Examples:
+            - `http_adapter.py`: Abstraction for making HTTP requests (e.g., using `requests`).
+            - `cache_adapter.py`: Adapter for interacting with a caching service (e.g., Redis).
+            - `email_adapter.py`: Utility for sending emails through external providers.
+    - **`exceptions/`**: Contains custom exception classes for consistent error handling across the application.
+        - Examples:
+            - `custom_exceptions.py`: Base and specific exception classes (e.g., `ValidationError`, `ServiceUnavailableError`).
+            - `api_error.py`: Exceptions for API-specific errors.
+            - `not_found_error.py`: Exception for "not found" cases.
     - **Examples:**
-        - `user_policy.py`: Governs what actions a user can perform on other users (e.g., admin can delete users).
-        - `post_policy.py`: Controls whether a user can edit, delete, or publish posts.
-        - `order_policy.py`: Restricts order viewing and modification to order owners.
-        - `payment_policy.py`: Ensures only authorized users can initiate refunds or cancellations.
-        - `subscription_policy.py`: Governs access to subscription-based features.
-        - `comment_policy.py`: Determines who can delete or report comments.
-        - `category_policy.py`: Restricts category creation or deletion to admins.
-        - `invoice_policy.py`: Limits invoice access to relevant users or admins.
-        - `product_policy.py`: Controls whether users can add, edit, or delete products.
-        - `role_policy.py`: Ensures only specific roles (e.g., admin) can assign or remove roles from users.
+        - `config.py`: Centralized configuration management for the application (e.g., loading environment variables).
+        - `logger.py`: Configurable logging utility for standardized application-wide logging.
+        - `constants.py`: Centralized constants used throughout the application (e.g., magic numbers, API endpoints, or status codes).
+        - `validators.py`: Collection of reusable input validation functions.
+        - `encryption_utils.py`: Functions for encryption and decryption (e.g., hashing passwords or securing sensitive data).
+        - `rate_limiter.py`: Utility for rate-limiting requests to APIs or services.
+        - `http_adapter.py`: Adapter for making HTTP requests using `requests` or `httpx`.
+        - `date_utils.py`: Utility functions for date manipulation (e.g., parsing, formatting).
+        - `mock_services.py`: Mocks for external services or APIs used in testing or development environments.
+        - `dependency_injection.py`: Dependency injection setup or shared service registries.
 
 * * *
 
