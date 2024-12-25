@@ -90,13 +90,31 @@ project/
 │   │       ├── product_repository.py
 │   │       └── order_repository.py
 │   │
-│   ├── shared/             # Shared resources and reusable components
-│   │   ├── dto/            # Data Transfer Objects
-│   │   │   ├── user_dto.py # DTO for user data
-│   │   │   └── order_dto.py # DTO for order data
-│   │   ├── validation_rules.py # Common validation logic
-│   │   ├── enums.py        # Enumerations used across the app
-│   │   └── constants.py    # Shared constants (e.g., app-wide config values)
+│   ├── /shared/                      # Contains reusable utilities, adapters, and shared components
+│   │   ├── /adapters/                # Interfaces or wrappers for external libraries or APIs
+│   │   │   ├── api_adapter.py        # Adapter for integrating with external APIs
+│   │   │   ├── payment_adapter.py    # Wrapper for payment gateway interactions
+│   │   │   └── cache_adapter.py      # Abstraction layer for caching mechanisms
+│   │   │
+│   │   ├── /dto/                     # Data Transfer Objects for inter-layer communication
+│   │   │   ├── user_dto.py           # DTO for user-related data transfer
+│   │   │   ├── product_dto.py        # DTO for product-related data transfer
+│   │   │   ├── order_dto.py          # DTO for order-related data transfer
+│   │   │   ├── payment_dto.py        # DTO for payment-related data transfer
+│   │   │
+│   │   ├── /exceptions/              # Custom exception classes for consistent error handling
+│   │   │   ├── validation_error.py   # Exception for input validation errors
+│   │   │   ├── service_error.py      # Exception for service-related errors
+│   │   │   └── repository_error.py   # Exception for data access errors
+│   │   │
+│   │   ├── /helpers/                 # General-purpose utility functions
+│   │   │   ├── date_utils.py         # Functions for date and time manipulation
+│   │   │   ├── string_utils.py       # String processing utilities
+│   │   │   └── file_utils.py         # File handling utilities
+│   │   │
+│   │   ├── constants.py              # Centralized application constants
+│   │   ├── logger.py                 # Utility for standardized logging
+│   │   └── config.py                 # Configuration settings loader
 │   │
 │   ├── tests/              # Test cases
 │   │   ├── unit/           # Unit tests
