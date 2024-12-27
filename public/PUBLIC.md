@@ -6,11 +6,10 @@
 project/
 │
 ├── public/                 # Publicly accessible files (for web apps)
+│   ├── index.py
 │   ├── css/
-│   ├── images/
-│   ├── index.php
-│   └── js/
-│
+│   ├── js/
+│   └── images/
 ```
 
 ### **Folder Structure Explanation**

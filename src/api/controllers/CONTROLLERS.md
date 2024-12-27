@@ -6,11 +6,12 @@
 project/
 │
 ├── src/                    # Source code
+│   │
 │   ├── api/                # API-specific components
 │   │   ├── controllers/    # API controllers
-│   │   │   ├── OrderController.php
-│   │   │   ├── ProductController.php
-│   │   │   └── UserController.php
+│   │   │   ├── user_controller.py
+│   │   │   ├── product_controller.py
+│   │   │   └── order_controller.py
 ```
 
 
@@ -21,17 +22,17 @@ project/
 #### **`api/`**
 
 - **Purpose:** Handles all API-related functionalities, exposing endpoints for client interactions and managing data flow between the backend and frontend or external services. It ensures consistent data representation and encapsulates logic related to HTTP requests and responses.
-    - **`controllers/`**: These files process HTTP requests, call relevant services, and return appropriate responses (e.g., JSON or HTTP status codes). Controllers act as the interface between external requests and internal logic.
+    - `controllers/`: These files process HTTP requests, call relevant services, and return appropriate responses (e.g., JSON or HTTP status codes). Controllers act as the interface between external requests and internal logic.
         - Examples:
-            - `UserController.php`: Processes requests like registering users, fetching user data, or updating profiles.
-            - `OrderController.php`: Handles endpoints like placing an order, viewing order history, or canceling an order.
-            - `AuthController.php`: Manages authentication, including login, logout, and token refresh.
-            - `ProductController.php`: Handles product-related CRUD operations like adding, updating, or deleting products.
-            - `PaymentController.php`: Processes requests for initiating or validating payments.
-            - `CategoryController.php`: Manages endpoints for retrieving or modifying product categories.
-            - `ProfileController.php`: Handles user profile updates or preferences.
-            - `NotificationController.php`: Manages sending or retrieving notifications for users.
-            - `ReportController.php`: Exposes endpoints to generate and download reports.
-            - `ReviewController.php`: Handles product review creation, updates, and retrieval.
+            - `user_controller.py`: Processes requests like registering users, fetching user data, or updating profiles.
+            - `order_controller.py`: Handles endpoints like placing an order, viewing order history, or canceling an order.
+            - `auth_controller.py`: Manages authentication, including login, logout, and token refresh.
+            - `product_controller.py`: Handles product-related CRUD operations like adding, updating, or deleting products.
+            - `payment_controller.py`: Processes requests for initiating or validating payments.
+            - `category_controller.py`: Manages endpoints for retrieving or modifying product categories.
+            - `profile_controller.py`: Handles user profile updates or preferences.
+            - `notification_controller.py`: Manages sending or retrieving notifications for users.
+            - `report_controller.py`: Exposes endpoints to generate and download reports.
+            - `review_controller.py`: Handles product review creation, updates, and retrieval.
 
 * * *
