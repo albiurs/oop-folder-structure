@@ -111,6 +111,11 @@ project/
 │   │       ├── product_repository.py
 │   │       └── order_repository.py
 │   │
+│   ├── jobs/               # Asynchronous or background tasks
+│   │   ├── send_email_job.py
+│   │   ├── generate_report_job.py
+│   │   └── data_cleanup_job.py
+│   │
 │   ├── shared/                      # Contains reusable utilities, adapters, and shared components
 │   │   ├── adapters/                # Interfaces or wrappers for external libraries or APIs
 │   │   │   ├── api_adapter.py
