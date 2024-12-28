@@ -116,6 +116,10 @@ project/
 │   │   ├── generate_report_job.py
 │   │   └── data_cleanup_job.py
 │   │
+│   ├── policies/           # Authorization policies
+│   │   ├── post_policy.py
+│   │   └── user_policy.py
+│   │
 │   ├── shared/                      # Contains reusable utilities, adapters, and shared components
 │   │   ├── adapters/                # Interfaces or wrappers for external libraries or APIs
 │   │   │   ├── api_adapter.py
