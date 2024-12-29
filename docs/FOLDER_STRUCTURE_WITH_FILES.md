@@ -143,15 +143,34 @@ project/
 │   │   └── config.py                 # Configuration settings loader
 │   │
 │   ├── tests/              # Test cases
-│   │   ├── unit/           # Unit tests
-│   │   ├── integration/    # Integration tests
 │   │   ├── e2e/            # End-to-end tests
+│   │   │   ├── test_user_registration.py
+│   │   │   ├── test_checkout_process.py
+│   │   │   └── test_admin_panel_access.py
+│   │   │
 │   │   ├── fixtures/       # Test data
-│   │   └── mocks/          # Mock objects
+│   │   │   ├── sample_users.json
+│   │   │   ├── test_orders.csv
+│   │   │   └── sample_products.json
+│   │   │
+│   │   ├── integration/    # Integration tests
+│   │   │   ├── test_user_repository.py
+│   │   │   ├── test_payment_processing.py
+│   │   │   └── test_order_placement.py
+│   │   │
+│   │   ├── mocks/          # Mock objects
+│   │   │   ├── mock_payment_gateway.py
+│   │   │   ├── mock_email_service.py
+│   │   │   └── mock_inventory_service.py
+│   │   │
+│   │   └── unit/           # Unit tests
+│   │       ├── test_user_model.py
+│   │       ├── test_order_validation.py
+│   │       └── test_product_price_calculation.py
 │   │
 │   └── utilities/          # General-purpose utilities
-│       ├── string_helpers.py
-│       ├── date_helpers.py
+│       ├── validator.py
+│       ├── date_formatter.py
 │       └── logger.py
 │
 └── vendor/                 # Third-party libraries (e.g., pip, npm)
