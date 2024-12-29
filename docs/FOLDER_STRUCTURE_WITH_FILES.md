@@ -126,43 +126,39 @@ project/
 │   │   │   ├── payment_adapter.py
 │   │   │   └── cache_adapter.py
 │   │   ├── dto/                     # Data Transfer Objects for inter-layer communication
-│   │   │   ├── user_dto.py           # DTO for user-related data transfer
-│   │   │   ├── product_dto.py        # DTO for product-related data transfer
-│   │   │   ├── order_dto.py          # DTO for order-related data transfer
-│   │   │   └── payment_dto.py        # DTO for payment-related data transfer
+│   │   │   ├── user_dto.py
+│   │   │   ├── product_dto.py
+│   │   │   ├── order_dto.py
+│   │   │   └── payment_dto.py
 │   │   ├── exceptions/              # Custom exception classes for consistent error handling
-│   │   │   ├── validation_error.py   # Exception for input validation errors
-│   │   │   ├── service_error.py      # Exception for service-related errors
-│   │   │   └── repository_error.py   # Exception for data access errors
+│   │   │   ├── validation_error.py
+│   │   │   ├── service_error.py
+│   │   │   └── repository_error.py
 │   │   ├── helpers/                 # General-purpose utility functions
-│   │   │   ├── date_utils.py         # Functions for date and time manipulation
-│   │   │   ├── string_utils.py       # String processing utilities
-│   │   │   └── file_utils.py         # File handling utilities
-│   │   ├── constants.py              # Centralized application constants
-│   │   ├── logger.py                 # Utility for standardized logging
-│   │   └── config.py                 # Configuration settings loader
+│   │   │   ├── date_utils.py
+│   │   │   ├── string_utils.py
+│   │   │   └── file_utils.py
+│   │   ├── constants.py
+│   │   ├── logger.py
+│   │   └── config.py
 │   │
 │   ├── tests/              # Test cases
 │   │   ├── e2e/            # End-to-end tests
 │   │   │   ├── test_user_registration.py
 │   │   │   ├── test_checkout_process.py
 │   │   │   └── test_admin_panel_access.py
-│   │   │
 │   │   ├── fixtures/       # Test data
 │   │   │   ├── sample_users.json
 │   │   │   ├── test_orders.csv
 │   │   │   └── sample_products.json
-│   │   │
 │   │   ├── integration/    # Integration tests
 │   │   │   ├── test_user_repository.py
 │   │   │   ├── test_payment_processing.py
 │   │   │   └── test_order_placement.py
-│   │   │
 │   │   ├── mocks/          # Mock objects
 │   │   │   ├── mock_payment_gateway.py
 │   │   │   ├── mock_email_service.py
 │   │   │   └── mock_inventory_service.py
-│   │   │
 │   │   └── unit/           # Unit tests
 │   │       ├── test_user_model.py
 │   │       ├── test_order_validation.py
